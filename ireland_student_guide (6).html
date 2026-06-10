@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل الطالب السعودي في أيرلندا</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Cairo', 'Arial', sans-serif;
+    direction: rtl;
+    background: #f5f5f5;
+    color: #1a1a2e;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .cover {
+    background: linear-gradient(135deg, #006633 0%, #004d26 50%, #003d1f 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    page-break-after: always;
+  }
+
+  .cover .flag-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-size: 80px;
+    margin-bottom: 30px;
+  }
+
+  .cover h1 {
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  }
+
+  .cover h2 {
+    font-size: 22px;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 40px;
+  }
+
+  .cover .subtitle {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 20px 40px;
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  .cover .cities {
+    margin-top: 30px;
+    font-size: 16px;
+    opacity: 0.8;
+  }
+
+  .toc {
+    background: white;
+    padding: 60px 50px;
+    page-break-after: always;
+  }
+
+  .toc h2 {
+    font-size: 28px;
+    font-weight: 900;
+    color: #006633;
+    border-bottom: 3px solid #006633;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+  }
+
+  .toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #f8f9fa;
+    border-right: 4px solid #006633;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .toc-item .num {
+    background: #006633;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .section {
+    background: white;
+    padding: 50px;
+    margin-bottom: 0;
+    page-break-before: always;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #006633;
+  }
+
+  .section-icon {
+    font-size: 40px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    font-weight: 900;
+    color: #006633;
+  }
+
+  .section-num {
+    background: #006633;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .intro-box {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    border-right: 5px solid #006633;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    color: #1a3a1a;
+  }
+
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .step {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px 25px;
+    border-right: 4px solid #4CAF50;
+    position: relative;
+  }
+
+  .step.urgent {
+    border-right-color: #e53935;
+    background: #fff5f5;
+  }
+
+  .step.important {
+    border-right-color: #FB8C00;
+    background: #fff8f0;
+  }
+
+  .step-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  .badge-red { background: #ffcdd2; color: #c62828; }
+  .badge-orange { background: #ffe0b2; color: #e65100; }
+  .badge-green { background: #c8e6c9; color: #2e7d32; }
+  .badge-blue { background: #bbdefb; color: #1565c0; }
+
+  .step p { color: #444; font-size: 14px; }
+
+  .tip-box {
+    background: #e3f2fd;
+    border-right: 4px solid #1976d2;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0d47a1;
+  }
+
+  .tip-box strong { display: block; margin-bottom: 5px; font-size: 15px; }
+
+  .warning-box {
+    background: #fff3e0;
+    border-right: 4px solid #FB8C00;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #e65100;
+  }
+
+  .warning-box strong { display: block; margin-bottom: 5px; }
+
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+
+  .checklist li {
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    background: #f1f8e9;
+    border-radius: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .checklist li::before {
+    content: "☐";
+    font-size: 18px;
+    color: #006633;
+    flex-shrink: 0;
+    margin-top: -1px;
+  }
+
+  .docs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 15px;
+  }
+
+  .doc-item {
+    background: #f3e5f5;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    border-right: 3px solid #7b1fa2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .info-table th {
+    background: #006633;
+    color: white;
+    padding: 12px 15px;
+    text-align: right;
+  }
+
+  .info-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .info-table tr:nth-child(even) td { background: #f9f9f9; }
+
+  .city-section {
+    background: #f0fdf4;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #86efac;
+  }
+
+  .city-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #006633;
+    margin-bottom: 10px;
+  }
+
+  .footer-page {
+    background: #006633;
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+    page-break-before: always;
+  }
+
+  .footer-page h2 {
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 700px;
+    margin: 30px auto;
+  }
+
+  .contact-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-card .icon { font-size: 30px; margin-bottom: 10px; }
+  .contact-card .label { font-size: 13px; opacity: 0.8; }
+  .contact-card .value { font-size: 15px; font-weight: 600; margin-top: 5px; }
+
+  a.toc-item {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  a.toc-item:hover {
+    background: #e8f5e9;
+    transform: translateX(-4px);
+  }
+
+  @media print {
+    body { background: white; }
+    .section, .toc, .cover, .footer-page { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="flag-row">🇸🇦 ✈️ 🇮🇪</div>
+  <h1>دليل الطالب السعودي في أيرلندا</h1>
+  <h2>دليلك الشامل للحياة الدراسية في أيرلندا</h2>
+  <div class="subtitle">
+    كل ما تحتاج معرفته خطوة بخطوة<br>
+    من لحظة وصولك حتى استقرارك الكامل
+  </div>
+  <div class="cities">📍 يشمل هذا الدليل: دبلن • كورك • غالواي • ترالي وجميع المدن</div>
+  <div style="margin-top:40px; background:rgba(255,255,255,0.1); border:1px solid rgba(255,255,255,0.25); border-radius:12px; padding:20px 35px; max-width:600px; font-size:14px; line-height:2;">
+    <p>✍️ أعده: <strong>محمد الشهراني</strong></p>
+    <p style="margin-top:8px; opacity:0.85;">⚠️ هذا الدليل مبني على تجارب الطلاب والمبتعثين وليس وثيقة رسمية. يُنصح دائماً بالتحقق من أحدث المتطلبات من الجهات الرسمية المختصة.</p>
+  </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <h2>📋 فهرس المحتويات</h2>
+  <a href="#section-pre" class="toc-item">
+    <span>قبل السفر — ما يجب ترتيبه مسبقاً</span>
+    <div class="num">٠</div>
+  </a>
+  <a href="#section-1" class="toc-item">
+    <span>قائمة التحقق — ماذا تفعل فور وصولك</span>
+    <div class="num">١</div>
+  </a>
+  <a href="#section-2" class="toc-item">
+    <span>تسجيل الإقامة (IRP) — بطاقة الإقامة</span>
+    <div class="num">٢</div>
+  </a>
+  <a href="#section-3" class="toc-item">
+    <span>فتح حساب بنكي</span>
+    <div class="num">٣</div>
+  </a>
+  <a href="#section-4" class="toc-item">
+    <span>التسجيل لدى الطبيب العام (GP)</span>
+    <div class="num">٤</div>
+  </a>
+  <a href="#section-5" class="toc-item">
+    <span>إيجاد شقة أو غرفة</span>
+    <div class="num">٥</div>
+  </a>
+  <a href="#section-6" class="toc-item">
+    <span>شريحة الهاتف والإنترنت</span>
+    <div class="num">٦</div>
+  </a>
+  <a href="#section-7" class="toc-item">
+    <span>رخصة القيادة الأيرلندية</span>
+    <div class="num">٧</div>
+  </a>
+  <a href="#section-8" class="toc-item">
+    <span>بطاقة Student Leap Card — خصم المواصلات</span>
+    <div class="num">٨</div>
+  </a>
+  <a href="#section-9" class="toc-item">
+    <span>المدارس والحضانات للأسر المبتعثة</span>
+    <div class="num">٩</div>
+  </a>
+  <a href="#section-10" class="toc-item">
+    <span>شراء سيارة في أيرلندا</span>
+    <div class="num">١٠</div>
+  </a>
+  <a href="#section-11" class="toc-item">
+    <span>الكهرباء والغاز بعد استئجار السكن</span>
+    <div class="num">١١</div>
+  </a>
+  <a href="#section-12" class="toc-item">
+    <span>الحمل والولادة في أيرلندا</span>
+    <div class="num">١٢</div>
+  </a>
+  <a href="#section-13" class="toc-item">
+    <span>تأشيرة شنغن للمبتعث في أيرلندا</span>
+    <div class="num">١٣</div>
+  </a>
+  <a href="#section-14" class="toc-item">
+    <span>أهم التطبيقات التي تحتاجها فور الوصول</span>
+    <div class="num">١٤</div>
+  </a>
+  <a href="#section-15" class="toc-item">
+    <span>أهم المواقع الإلكترونية في أيرلندا</span>
+    <div class="num">١٥</div>
+  </a>
+</div>
+
+<!-- SECTION 0: PRE-ARRIVAL -->
+<div id="section-pre" class="section">
+  <div class="section-header">
+    <div class="section-num">٠</div>
+    <div class="section-icon">🎒</div>
+    <div class="section-title">قبل السفر — ما يجب ترتيبه مسبقاً</div>
+  </div>
+
+  <div class="intro-box">
+    التحضير الجيد قبل السفر يوفر عليك الكثير من الضغط بعد الوصول. هذه الخطوات تساعدك على بداية مريحة ومنظمة.
+  </div>
+
+  <div class="steps-container">
+    <div class="step urgent">
+      <div class="step-title">🏠 ابحث عن السكن مبكراً <span class="badge badge-red">قبل السفر</span></div>
+      <p>سوق السكن في أيرلندا — خاصة دبلن — تنافسي جداً. ابدأ البحث قبل وصولك بأسابيع. أفضل المصادر:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>موقع <strong>Daft.ie</strong> — الأكثر استخداماً في أيرلندا</li>
+        <li>المجموعات السعودية والعربية في أيرلندا على واتساب وفيسبوك</li>
+        <li>حسابات الإعلانات والعقارات على Instagram</li>
+        <li>التواصل مع طلاب سعوديين موجودين حالياً في نفس مدينتك</li>
+      </ul>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">⚠️ لا تحوّل أموالاً قبل التأكد <span class="badge badge-red">تحذير مهم</span></div>
+      <p>لا تدفع وديعة أو إيجاراً لأي شخص قبل التحقق من مصداقية السكن وصاحبه شخصياً أو عبر شخص تثق به. الاحتيال شائع خاصة في الإعلانات عبر الإنترنت.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 1: ARRIVAL CHECKLIST -->
+<div id="section-1" class="section">
+  <div class="section-header">
+    <div class="section-num">١</div>
+    <div class="section-icon">✈️</div>
+    <div class="section-title">قائمة التحقق — فور وصولك إلى أيرلندا</div>
+  </div>
+
+  <div class="intro-box">
+    الأيام الأولى بعد وصولك هي الأهم. هذه القائمة تضمن لك أنك لن تنسى شيئاً ضرورياً.
+  </div>
+
+  <div class="steps-container">
+    <div class="step urgent">
+      <div class="step-title">📄 الوثائق التي يجب أن تحملها معك <span class="badge badge-red">ضروري جداً</span></div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز سفر ساري المفعول</div>
+        <div class="doc-item">📋 خطاب القبول من الجامعة</div>
+        <div class="doc-item">💰 إثبات المنحة الدراسية</div>
+        <div class="doc-item">🏠 عنوان إقامتك الأولى</div>
+        <div class="doc-item">💳 مبلغ نقدي أو بطاقة دولية</div>
+      </div>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">الأسبوع الأول — الأولويات القصوى <span class="badge badge-red">أول ٧ أيام</span></div>
+      <ul class="checklist">
+        <li>احصل على شريحة هاتف أيرلندية فور وصولك (من المطار أو أي متجر)</li>
+        <li>تواصل مع مكتب الطلاب الدوليين في جامعتك</li>
+        <li>احجز موعد IRP (تسجيل الإقامة) فوراً — الطلب يتم أونلاين</li>
+        <li>ابحث عن مسكن مؤقت إذا لم يكن لديك سكن دائم</li>
+        <li>افتح حساباً بنكياً في أقرب وقت ممكن</li>
+      </ul>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">الشهر الأول <span class="badge badge-orange">مهم</span></div>
+      <ul class="checklist">
+        <li>أنجز تسجيل IRP والحصول على البطاقة</li>
+        <li>سجّل نفسك لدى طبيب عام (GP)</li>
+        <li>أكمل التسجيل في الجامعة وبطاقة الطالب</li>
+        <li>استكشف وسائل المواصلات العامة في مدينتك</li>
+        <li>تعرف على أماكن التسوق والمساجد القريبة منك</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة مهمة</strong>
+    ابدأ بكل إجراء فور وصولك — لا تؤجل. المواعيد في أيرلندا تأخذ وقتاً وقد تنتظر أسابيع إذا تأخرت في الحجز.
+  </div>
+</div>
+
+<!-- SECTION 2: IRP -->
+<div id="section-2" class="section">
+  <div class="section-header">
+    <div class="section-num">٢</div>
+    <div class="section-icon">🪪</div>
+    <div class="section-title">تسجيل الإقامة — بطاقة IRP</div>
+  </div>
+
+  <div class="intro-box">
+    بطاقة IRP (Irish Residence Permit) هي وثيقتك الرسمية للإقامة في أيرلندا. يجب عليك التسجيل خلال 90 يوماً من دخولك البلاد.
+  </div>
+
+  <div class="steps-container">
+    <div class="step urgent">
+      <div class="step-title">⏰ المهلة الزمنية <span class="badge badge-red">90 يوماً من الوصول</span></div>
+      <p>يجب إتمام التسجيل خلال 90 يوماً من تاريخ دخولك أيرلندا. التأخر قد يسبب مشاكل قانونية.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🌐 الخطوة الأولى: احجز موعدك أونلاين</div>
+      <p>الموقع الرسمي للحجز: <strong>inisonline.jahs.ie</strong><br>
+      الحجز أونلاين إلزامي — لا يوجد قبول بدون موعد مسبق.<br>
+      <strong>التسجيل الأول لجميع المدن</strong> يتم حضورياً في دبلن فقط (Burgh Quay).</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 الوثائق المطلوبة لموعد IRP</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز السفر الأصلي</div>
+        <div class="doc-item">📋 خطاب قبول من الجامعة</div>
+        <div class="doc-item">💰 خطاب تعريف الضمان المالي والصحي</div>
+        <div class="doc-item">🏠 إثبات العنوان (فاتورة أو عقد إيجار)</div>
+        <div class="doc-item">💳 بطاقة بنكية فعلية لسداد رسوم 300 يورو</div>
+        <div class="doc-item">💍 عقد الزواج + ترجمة معتمدة (للمتزوجين)</div>
+      </div>
+      <div class="warning-box" style="margin-top:15px;">
+        <strong>⚠️ تنبيه الدفع — مهم جداً</strong>
+        لا يُقبل الدفع نقداً (Cash) ولا عبر Apple Pay أو Google Pay.<br>
+        يجب إحضار <strong>البطاقة البنكية الفعلية</strong> معك لسداد رسوم التسجيل البالغة 300 يورو.
+      </div>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">🏙️ تحديث مهم 2025 — مكان التسجيل <span class="badge badge-red">جديد</span></div>
+      <div class="city-section" style="background:#fff0f0; border-color:#f87171;">
+        <div class="city-name" style="color:#c62828;">⚠️ جميع التسجيلات الأولى تتم في دبلن فقط</div>
+        <p>بغض النظر عن مدينتك (كورك، غالواي، ترالي، ليمريك...)، يجب السفر إلى دبلن لإتمام التسجيل الأول.<br>
+        مكتب التسجيل: <strong>Burgh Quay Registration Office, Dublin</strong><br>
+        الحجز أونلاين فقط عبر: <strong>inisonline.jahs.ie</strong></p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">✅ بعد التسجيل — استلام البطاقة</div>
+      <p>بعد إتمام الموعد ودفع الرسوم:<br>
+      • ترسل بطاقة IRP إلى عنوان سكنك المسجل<br>
+      • تصل عادةً خلال <strong>أسبوع إلى أسبوعين</strong><br>
+      • احتفظ بها دائماً — ستحتاجها للسفر وفتح الحسابات وكل المعاملات الرسمية</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🔄 تجديد الإقامة (Renewal)</div>
+      <p>البطاقة مرتبطة بمدة دراستك (Stamp 2) وتحتاج تجديداً دورياً.<br>
+      <strong>خبر جيد:</strong> منذ أواخر 2024، أصبح التجديد يتم <strong>إلكترونياً بالكامل</strong> عبر بوابة الهجرة — دون الحاجة لزيارة المكتب.<br>
+      ✔ قدّم طلب التجديد قبل انتهاء البطاقة بوقت كافٍ.</p>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <strong>⚠️ تنبيه يوم الموعد — الدفع</strong>
+    احضر البطاقة البنكية الفعلية معك. كثير من الطلاب واجهوا مشكلة لأن Apple Pay وGoogle Pay قد لا تُقبل على جهاز الدفع في المكتب. الرسوم: <strong>300 يورو للشخص البالغ</strong>.
+  </div>
+</div>
+
+<!-- SECTION 3: BANK -->
+<div id="section-3" class="section">
+  <div class="section-header">
+    <div class="section-num">٣</div>
+    <div class="section-icon">🏦</div>
+    <div class="section-title">فتح حساب بنكي</div>
+  </div>
+
+  <div class="intro-box">
+    تحتاج لحساب بنكي أيرلندي لاستقبال مبلغ المنحة الدراسية ولدفع الإيجار والمصاريف اليومية.
+  </div>
+
+  <div class="steps-container">
+    <div class="step important">
+      <div class="step-title">🏦 أفضل الخيارات البنكية للطلاب <span class="badge badge-orange">موصى به</span></div>
+      <table class="info-table">
+        <tr>
+          <th>البنك</th>
+          <th>المميزات</th>
+          <th>ملاحظات</th>
+        </tr>
+        <tr>
+          <td><strong>Bank of Ireland</strong></td>
+          <td>حساب طالب مجاني، تطبيق ممتاز</td>
+          <td>الأكثر شيوعاً بين الطلاب</td>
+        </tr>
+        <tr>
+          <td><strong>AIB</strong></td>
+          <td>فروع كثيرة، خدمة جيدة</td>
+          <td>حساب طالب متاح</td>
+        </tr>
+        <tr>
+          <td><strong>Revolut / N26</strong></td>
+          <td>فتح أونلاين 100%، سريع جداً</td>
+          <td>مثالي للبداية بينما تنتظر البنك الرسمي</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 الوثائق المطلوبة لفتح الحساب</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز السفر</div>
+        <div class="doc-item">🏠 إثبات العنوان في أيرلندا</div>
+        <div class="doc-item">📋 خطاب من الجامعة</div>
+        <div class="doc-item">🪪 بطاقة IRP (إذا كانت جاهزة)</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">💡 نصيحة: ابدأ بـ Revolut</div>
+      <p>افتح حساب Revolut أونلاين فوراً لاستخدامه في الأيام الأولى. يمكنك لاحقاً فتح حساب في بنك تقليدي لاستقبال المنحة الدراسية.</p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة إثبات العنوان</strong>
+    إذا لم يكن لديك فاتورة بعد، اطلب من مكتب الجامعة أو صاحب السكن خطاباً رسمياً يثبت عنوانك — كثير من البنوك تقبل هذا.
+  </div>
+</div>
+
+<!-- SECTION 4: GP -->
+<div id="section-4" class="section">
+  <div class="section-header">
+    <div class="section-num">٤</div>
+    <div class="section-icon">🏥</div>
+    <div class="section-title">التسجيل لدى الطبيب العام (GP)</div>
+  </div>
+
+  <div class="intro-box">
+    الطبيب العام (General Practitioner - GP) هو طبيبك الأساسي في أيرلندا. لا يمكنك مراجعة المستشفى مباشرةً في الحالات العادية — يجب أن تمر عبر الـ GP أولاً.
+  </div>
+
+  <div class="steps-container">
+    <div class="step">
+      <div class="step-title">🔍 الخطوة الأولى: ابحث عن GP قريب منك</div>
+      <p>ابحث على Google عن: <strong>"GP near me"</strong> أو <strong>"GP accepting new patients [اسم مدينتك]"</strong><br>
+      موقع HSE.ie يحتوي على قائمة الأطباء في كل منطقة.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📞 الخطوة الثانية: تواصل مع العيادة</div>
+      <p>اتصل أو أرسل بريد إلكتروني للعيادة واسأل: <em>"Are you accepting new patients?"</em><br>
+      في بعض المدن قد تحتاج وقتاً للعثور على GP يقبل مرضى جدد.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 الوثائق المطلوبة للتسجيل</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز السفر أو IRP</div>
+        <div class="doc-item">🏠 إثبات العنوان</div>
+        <div class="doc-item">🏥 وثيقة التأمين الصحي</div>
+        <div class="doc-item">📋 بطاقة الطالب</div>
+      </div>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">💰 التكلفة <span class="badge badge-orange">مهم</span></div>
+      <p>الزيارة العادية للـ GP تكلف حوالي <strong>50-70 يورو</strong>.<br>
+      تأكد من أن تأمينك الصحي (من البعثة أو المنحة) يغطي هذه الزيارات.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🚨 الطوارئ</div>
+      <p>في حالات الطوارئ: اذهب مباشرة إلى قسم الطوارئ (A&E) في أقرب مستشفى.<br>
+      رقم الطوارئ في أيرلندا: <strong>999 أو 112</strong></p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة</strong>
+    سجّل لدى GP قبل أن تمرض! لا تنتظر حتى تحتاج طبيباً لأن عملية التسجيل قد تأخذ أياماً.
+  </div>
+</div>
+
+<!-- SECTION 5: APARTMENT -->
+<div id="section-5" class="section">
+  <div class="section-header">
+    <div class="section-num">٥</div>
+    <div class="section-icon">🏠</div>
+    <div class="section-title">إيجاد شقة أو غرفة للسكن</div>
+  </div>
+
+  <div class="intro-box">
+    سوق الإيجار في أيرلندا تنافسي جداً خاصة في دبلن. ابدأ البحث مبكراً قبل وصولك بأسابيع إذا أمكن.
+  </div>
+
+  <div class="steps-container">
+    <div class="step">
+      <div class="step-title">🌐 أفضل مواقع البحث عن السكن</div>
+      <table class="info-table">
+        <tr>
+          <th>الموقع</th>
+          <th>ما يقدمه</th>
+        </tr>
+        <tr>
+          <td><strong>daft.ie</strong></td>
+          <td>الأكثر استخداماً في أيرلندا — شقق كاملة وغرف</td>
+        </tr>
+        <tr>
+          <td><strong>myhome.ie</strong></td>
+          <td>خيارات واسعة للإيجار</td>
+        </tr>
+        <tr>
+          <td><strong>rent.ie</strong></td>
+          <td>خيار جيد إضافي</td>
+        </tr>
+        <tr>
+          <td><strong>Instagram</strong></td>
+          <td>ابحث عن "حراج أيرلندا" — إعلانات من مقيمين عرب وسعوديين</td>
+        </tr>
+        <tr>
+          <td><strong>سكن الجامعة</strong></td>
+          <td>الخيار الأفضل للمبتدئين — تواصل مع accommodation office في جامعتك</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">💰 متوسط أسعار الإيجار <span class="badge badge-orange">تقريبي 2024</span></div>
+      <table class="info-table">
+        <tr>
+          <th>المدينة</th>
+          <th>غرفة مشتركة</th>
+          <th>شقة لشخص واحد</th>
+        </tr>
+        <tr>
+          <td>دبلن</td>
+          <td>800 - 1200 يورو/شهر</td>
+          <td>1700 - 2200 يورو/شهر (غرفة واحدة) — 2200 - 2800 يورو/شهر (غرفتان)</td>
+        </tr>
+        <tr>
+          <td>كورك</td>
+          <td>600 - 900 يورو/شهر</td>
+          <td>1200 - 1800 يورو/شهر</td>
+        </tr>
+        <tr>
+          <td>غالواي</td>
+          <td>550 - 850 يورو/شهر</td>
+          <td>1100 - 1600 يورو/شهر</td>
+        </tr>
+        <tr>
+          <td>ترالي</td>
+          <td>400 - 650 يورو/شهر</td>
+          <td>1800 يورو/شهر</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 ما تحتاجه لعقد الإيجار</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز سفر أو IRP</div>
+        <div class="doc-item">💰 وديعة (عادة شهر أو شهرين)</div>
+        <div class="doc-item">📋 مرجع (reference) من الجامعة</div>
+        <div class="doc-item">💳 إثبات الدخل أو المنحة</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">✅ نصائح مهمة قبل التوقيع</div>
+      <ul class="checklist">
+        <li>اقرأ عقد الإيجار جيداً قبل التوقيع</li>
+        <li>التقط صوراً لحالة الشقة عند الدخول</li>
+        <li>احصل على إيصال للوديعة المدفوعة</li>
+        <li>تحقق أن العقد مسجل في RTB (هيئة الإيجار)</li>
+        <li>وضّح ما يشمله الإيجار (ماء، كهرباء، إنترنت؟)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="warning-box">
+    <strong>⚠️ احذر من الاحتيال</strong>
+    لا تدفع وديعة أو إيجاراً قبل أن تزور الشقة شخصياً أو عبر شخص تثق به. الإعلانات المشبوهة (سعر منخفض جداً) غالباً احتيال.
+  </div>
+</div>
+
+<!-- SECTION 6: SIM -->
+<div id="section-6" class="section">
+  <div class="section-header">
+    <div class="section-num">٦</div>
+    <div class="section-icon">📱</div>
+    <div class="section-title">شريحة الهاتف والإنترنت</div>
+  </div>
+
+  <div class="intro-box">
+    أول شيء تفعله عند وصولك: اشترِ شريحة أيرلندية. تحتاجها لكل شيء — المواعيد، التواصل، والتطبيقات.
+  </div>
+
+  <div class="steps-container">
+    <div class="step">
+      <div class="step-title">📱 أفضل شركات الاتصالات في أيرلندا</div>
+      <table class="info-table">
+        <tr>
+          <th>الشركة</th>
+          <th>المميزات</th>
+          <th>السعر التقريبي</th>
+        </tr>
+        <tr>
+          <td><strong>Three (3)</strong></td>
+          <td>الأفضل للطلاب — باقات سخية وغير محدودة</td>
+          <td>من 15-20 يورو/شهر</td>
+        </tr>
+        <tr>
+          <td><strong>Vodafone</strong></td>
+          <td>تغطية ممتازة في كل أيرلندا</td>
+          <td>من 20-30 يورو/شهر</td>
+        </tr>
+        <tr>
+          <td><strong>Eir</strong></td>
+          <td>جيد للمدن الكبيرة</td>
+          <td>من 15-25 يورو/شهر</td>
+        </tr>
+        <tr>
+          <td><strong>48 / GoMo</strong></td>
+          <td>أرخص الخيارات — مناسب للميزانية</td>
+          <td>من 10-15 يورو/شهر</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🌐 إنترنت المنزل</div>
+      <p>إذا كنت في شقة مستقلة، تحتاج إنترنت منزلي:<br>
+      <strong>Eir / Virgin Media / Sky</strong> — تواصل معهم لمقارنة الأسعار في منطقتك.<br>
+      سرعات جيدة متاحة بأسعار حوالي 30-50 يورو/شهر.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">💡 نصيحة</div>
+      <p>اشترِ شريحة Three أو Vodafone من مطار دبلن فور وصولك — المتاجر موجودة في المطار وتفتح طوال اليوم.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 7: DRIVING LICENSE -->
+<div id="section-7" class="section">
+  <div class="section-header">
+    <div class="section-num">٧</div>
+    <div class="section-icon">🚗</div>
+    <div class="section-title">رخصة القيادة الأيرلندية</div>
+  </div>
+
+  <div class="intro-box">
+    هناك مساران مختلفان حسب وضعك — من لديه رخصة سعودية يستفيد من تخفيف كبير في عدد الدروس ووقت الانتظار.
+  </div>
+
+  <div class="steps-container">
+
+    <!-- Step 1: PPS -->
+    <div class="step urgent">
+      <div class="step-title">١ — الحصول على رقم PPS Number <span class="badge badge-red">الخطوة الأولى</span></div>
+      <p>رقم PPS هو رقم الخدمات الحكومية الإيرلندية — ضروري لبدء إجراءات الرخصة.</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>قدّم الطلب أونلاين عبر نظام PPS Number</li>
+        <li>بعد الموافقة ستحصل على موعد حضوري</li>
+        <li>أحضر: جواز السفر + إثبات السكن (Proof of Address)</li>
+        <li>في الموعد: يتم التحقق من الهوية والتقاط صورة وتفعيل الرقم</li>
+        <li>بعدها يصلك رقم PPS ويمكنك استخدامه مباشرة</li>
+      </ul>
+    </div>
+
+    <!-- Step 2: Theory Test -->
+    <div class="step">
+      <div class="step-title">٢ — اجتياز الاختبار النظري (Theory Test)</div>
+      <p>بعد الحصول على PPS Number احجز اختبار النظرية في أقرب مركز.</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>ادرس من خلال التطبيقات التي تحاكي الاختبار — هي الأفضل للمراجعة</li>
+        <li>أو اشترِ الكتاب الرسمي من المكتبات أو استعره مجاناً</li>
+        <li>الاختبار: <strong>40 سؤال</strong> — درجة النجاح: <strong>35 من 40</strong></li>
+        <li>عند النجاح تحصل على شهادة نجاح في المركز — احتفظ بها!</li>
+      </ul>
+    </div>
+
+    <!-- Step 3: Vision -->
+    <div class="step">
+      <div class="step-title">٣ — فحص النظر (Vision Report)</div>
+      <p>بعد النجاح في النظرية، احجز موعداً مع طبيبك العام (GP) لإجراء <strong>Vision Report</strong> — تقرير يثبت صلاحية نظرك للقيادة.<br>
+      يمكن إجراؤه لدى GP عادي أو GP تابع للجامعة.</p>
+    </div>
+
+    <!-- Step 4: Learner Permit -->
+    <div class="step">
+      <div class="step-title">٤ — استخراج Learner Permit من NDLS</div>
+      <p>احجز موعداً حضورياً لدى <strong>National Driver Licence Service (NDLS)</strong> — الموقع: ndls.ie</p>
+      <div class="docs-grid" style="margin-top:10px;">
+        <div class="doc-item">🛂 جواز السفر</div>
+        <div class="doc-item">🔢 رقم PPS</div>
+        <div class="doc-item">🏠 إثبات السكن</div>
+        <div class="doc-item">📋 شهادة نجاح النظرية</div>
+        <div class="doc-item">👁️ تقرير النظر</div>
+        <div class="doc-item">💳 رسوم: ~55 يورو</div>
+      </div>
+      <p style="margin-top:10px;">بعد الموعد تصدر لك <strong>Learner Permit</strong> وتصلك بالبريد.</p>
+    </div>
+
+    <!-- Step 5: Two paths -->
+    <div class="step important">
+      <div class="step-title">٥ — اختر مسارك <span class="badge badge-orange">هنا يختلف الطلاب</span></div>
+      <table class="info-table">
+        <tr>
+          <th></th>
+          <th>بدون رخصة سعودية</th>
+          <th>لديك رخصة سعودية ✅</th>
+        </tr>
+        <tr>
+          <td>عدد دروس EDT</td>
+          <td>12 درساً إلزامية</td>
+          <td><strong>6 دروس فقط</strong></td>
+        </tr>
+        <tr>
+          <td>انتظار قبل الاختبار</td>
+          <td>6 أشهر كاملة</td>
+          <td><strong>لا انتظار</strong></td>
+        </tr>
+        <tr>
+          <td>نوع البرنامج</td>
+          <td>EDT كامل</td>
+          <td><strong>Reduced EDT</strong></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Reduced EDT path -->
+    <div class="step">
+      <div class="step-title">🇸🇦 كيف تحصل على Reduced EDT (لمن لديه رخصة سعودية)</div>
+      <ul class="checklist">
+        <li>احصل على <strong>خطاب من السفارة السعودية في أيرلندا</strong> يؤكد صحة رخصتك وأنها أصلية وسارية</li>
+        <li>عبّئ نموذج <strong>Reduced EDT</strong></li>
+        <li>أرسل بالبريد المسجل (Registered Post): الرخصة السعودية + خطاب السفارة + النموذج</li>
+        <li>انتظر الموافقة — بعدها تحصل على استثناء Reduced EDT</li>
+      </ul>
+      <div class="warning-box" style="margin-top:12px;">
+        <strong>⚠️ مهم جداً</strong>
+        استخدم Registered Post لإرسال مستنداتك — لحمايتها وتتبع الشحنة.
+      </div>
+    </div>
+
+    <!-- Step 6: Practical training -->
+    <div class="step">
+      <div class="step-title">٦ — التدريب العملي مع مدرب معتمد</div>
+      <p>بعد الموافقة على مسارك، احجز مع مدرب معتمد:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>بدون رخصة سعودية: <strong>12 حصة EDT</strong></li>
+        <li>مع رخصة سعودية: <strong>6 حصص فقط</strong></li>
+        <li>بعد الانتهاء يحفظ المدرب السجلات إلكترونياً في النظام تلقائياً</li>
+      </ul>
+    </div>
+
+    <!-- Step 7: Driving Test -->
+    <div class="step">
+      <div class="step-title">٧ — الاختبار العملي (Driving Test)</div>
+      <p>احجز موعد الاختبار عبر rsa.ie — في يوم الاختبار أحضر:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>Learner Permit</li>
+        <li>سيارة مؤمنة قانونياً ومسموح لك بقيادتها</li>
+        <li>تأكد أن وثيقة التأمين تشملك بشكل واضح</li>
+      </ul>
+    </div>
+
+    <!-- Step 8: Full License -->
+    <div class="step">
+      <div class="step-title">٨ — الحصول على الرخصة الكاملة 🎉</div>
+      <ul class="checklist">
+        <li>بعد النجاح تحصل على شهادة النجاح</li>
+        <li>احجز موعداً جديداً لدى NDLS</li>
+        <li>ادفع رسوم إصدار الرخصة</li>
+        <li>تصلك الرخصة الأيرلندية الكاملة بالبريد 🎊</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🚌 بديل: وسائل النقل العام</div>
+      <p>في معظم المدن الأيرلندية الكبيرة (دبلن، كورك، غالواي) يمكنك الاعتماد على:<br>
+      حافلات (Bus) • قطارات (Luas/DART في دبلن) • دراجات إيجار (Bleeper Bikes) • تاكسي أونلاين (Free Now, Uber)</p>
+    </div>
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة توفير الوقت</strong>
+    اختبار النظرية متاح باللغة العربية — استفد من هذا! قم بتحضيره عبر تطبيق Theory Tests Ireland.
+  </div>
+</div>
+
+<!-- SECTION 8: LEAP CARD -->
+<div id="section-8" class="section">
+  <div class="section-header">
+    <div class="section-num">٨</div>
+    <div class="section-icon">🚌</div>
+    <div class="section-title">بطاقة Student Leap Card — خصم المواصلات</div>
+  </div>
+
+  <div class="intro-box">
+    من أول البطاقات التي يُنصح باستخراجها بعد بدء الدراسة. تمنحك خصومات كبيرة على الحافلات (Dublin Bus)، الترام (Luas)، والقطارات (Irish Rail).
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step important">
+      <div class="step-title">💰 مثال على التوفير <span class="badge badge-orange">يستحق!</span></div>
+      <p>إذا كانت الرحلة العادية تكلف <strong>2 يورو</strong>، تدفع حوالي <strong>1 يورو فقط</strong> باستخدام Student Leap Card — أي توفير 50% على كل رحلة!</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 خطوات استخراج البطاقة</div>
+      <ul class="checklist">
+        <li>ادخل إلى الموقع الرسمي: <strong>studentleapcard.ie</strong></li>
+        <li>اختر <strong>Apply for a Student Leap Card</strong></li>
+        <li>أكمل الطلب الإلكتروني وارفع المستندات المطلوبة</li>
+        <li>بعد الموافقة ستصلك رسالة تأكيد</li>
+        <li>توجه لأحد مراكز Student Leap Card لإكمال التحقق واستلام البطاقة</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📄 المستندات المطلوبة</div>
+      <div class="docs-grid">
+        <div class="doc-item">📋 خطاب إثبات دراسة من الجامعة (Confirmation of Enrolment)</div>
+        <div class="doc-item">📷 صورة شخصية</div>
+        <div class="doc-item">🛂 إثبات هوية (جواز السفر)</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🏫 أماكن استلام البطاقة</div>
+      <p>تتوفر مراكز في معظم الجامعات والكليات الأيرلندية، منها:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>University College Dublin</li>
+        <li>Trinity College Dublin</li>
+        <li>Dublin City University</li>
+        <li>University of Limerick</li>
+        <li>University of Galway</li>
+        <li>وغيرها من الجامعات والكليات والمعاهد التقنية في جميع المدن</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">✅ بعد استلام البطاقة</div>
+      <p>اشحن البطاقة (Top Up) بالمبلغ الذي تحتاجه واستخدمها مباشرة في المواصلات العامة للاستفادة من أسعار الطلاب المخفضة.</p>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة — اطلب الخطاب الصحيح من جامعتك</strong>
+    تأكد أن خطاب إثبات الدراسة يحتوي على هذه المعلومات لقبول طلبك من أول مرة:<br>
+    الاسم الكامل • تاريخ الميلاد • اسم البرنامج الدراسي • تاريخ بداية ونهاية الدراسة
+  </div>
+</div>
+
+<!-- SECTION 9: SCHOOLS & CHILDCARE -->
+<div id="section-9" class="section">
+  <div class="section-header">
+    <div class="section-num">٩</div>
+    <div class="section-icon">🏫</div>
+    <div class="section-title">المدارس والحضانات للأسر المبتعثة</div>
+  </div>
+
+  <div class="intro-box">
+    من أهم الأمور التي تشغل الأسر المبتعثة عند الانتقال. ابدأ البحث والتسجيل مبكراً قدر الإمكان — خاصة في دبلن حيث الطلب كبير جداً.
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step">
+      <div class="step-title">🏫 أنواع المدارس في أيرلندا</div>
+      <table class="info-table">
+        <tr>
+          <th>نوع المدرسة</th>
+          <th>المميزات</th>
+          <th>ملاحظات</th>
+        </tr>
+        <tr>
+          <td><strong>Educate Together</strong></td>
+          <td>متعددة الثقافات، لا تعليم ديني لدين معين، تستقبل جميع الجنسيات</td>
+          <td>مناسبة جداً للعائلات المبتعثة — غالباً بدون زي موحد</td>
+        </tr>
+        <tr>
+          <td><strong>المدارس الكاثوليكية</strong></td>
+          <td>النسبة الأكبر في أيرلندا — تستقبل جميع الخلفيات</td>
+          <td>يوجد تعليم ديني كاثوليكي — زي موحد إلزامي عادةً</td>
+        </tr>
+        <tr>
+          <td><strong>المدرسة الإسلامية</strong></td>
+          <td>مرتبطة بالمركز الإسلامي في دبلن</td>
+          <td>مقاعد محدودة جداً — سجّل مبكراً جداً</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">👶 متى يبدأ الطفل المدرسة؟</div>
+      <p>يبدأ الأطفال مرحلة <strong>Junior Infants</strong> عند عمر 4 أو 5 سنوات.<br>
+      إذا أكمل طفلك 4 سنوات قبل شهر سبتمبر، يمكنه الالتحاق بالمدرسة في تلك السنة الدراسية.</p>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">📝 نصائح التسجيل في المدارس <span class="badge badge-orange">مهم</span></div>
+      <ul class="checklist">
+        <li>سجّل في أقرب مدرسة لمكان سكنك فور وصولك</li>
+        <li>التعليم في المدارس الحكومية مجاني — قد توجد رسوم بسيطة للكتب والأنشطة</li>
+        <li>إذا لم تتوفر أماكن اطلب إضافة طفلك لـ <strong>Waiting List</strong></li>
+        <li>كلما بكّرت في التسجيل زادت فرص الحصول على مقعد</li>
+      </ul>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">🍼 الحضانات (Childcare) <span class="badge badge-red">ابدأ البحث فوراً</span></div>
+      <p>الحصول على مكان في الحضانة من أصعب التحديات — قوائم الانتظار قد تمتد لعدة أشهر.</p>
+      <table class="info-table" style="margin-top:12px;">
+        <tr>
+          <th>التكلفة الشهرية التقريبية</th>
+          <th>تعتمد على</th>
+        </tr>
+        <tr>
+          <td>1000 - 1400 يورو/شهر أو أكثر</td>
+          <td>عدد الأيام والساعات، عمر الطفل، موقع الحضانة</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🎓 برنامج ECCE — ساعات تعليم مجانية</div>
+      <p>يوفر البرنامج ساعات تعليم مجانية للأطفال في مرحلة ما قبل المدرسة — عادةً من الصباح حتى الظهر.<br>
+      يساعد على تخفيض جزء كبير من تكاليف الحضانة للأسر المؤهلة.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">💰 برنامج NCS — دعم تكاليف الحضانة</div>
+      <p>تقدم الحكومة الأيرلندية دعماً لتكاليف الحضانة عبر <strong>National Childcare Scheme (NCS)</strong>.<br>
+      الموقع الرسمي: <strong>ncs.gov.ie</strong></p>
+      <div class="warning-box" style="margin-top:12px;">
+        <strong>⚠️ تنبيه مهم</strong>
+        لا تعتمد على تجربة شخص آخر! قيمة الدعم تختلف من أسرة لأخرى وتعتمد على: دخل الأسرة، عدد الأطفال وأعمارهم، وضع الوالدين، وعدد ساعات الرعاية. تحقق من أهليتك الشخصية عبر الموقع الرسمي.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">✅ قائمة تحقق للأسر المبتعثة</div>
+      <ul class="checklist">
+        <li>ابحث عن المدارس القريبة من منزلك فور الوصول</li>
+        <li>سجّل الأبناء في المدرسة مبكراً — لا تنتظر بداية الدراسة</li>
+        <li>ابحث عن حضانة مبكراً — قد تستغرق عدة أشهر</li>
+        <li>استخرج أرقام PPS للأطفال فور وصولهم</li>
+        <li>تحقق من أهليتك لبرنامج ECCE</li>
+        <li>تحقق من أهليتك لبرنامج NCS عبر ncs.gov.ie</li>
+        <li>احتفظ بنسخ من جميع مستندات الأطفال (جوازات، شهادات ميلاد، تطعيمات)</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 روابط مفيدة</strong>
+    نظام المدارس في أيرلندا: <strong>citizensinformation.ie</strong><br>
+    مدارس Educate Together: <strong>educatetogether.ie</strong><br>
+    دعم الحضانة NCS: <strong>ncs.gov.ie</strong>
+  </div>
+</div>
+
+<!-- SECTION 10: CAR BUYING -->
+<div id="section-10" class="section">
+  <div class="section-header">
+    <div class="section-num">١٠</div>
+    <div class="section-icon">🚗</div>
+    <div class="section-title">شراء سيارة في أيرلندا</div>
+  </div>
+
+  <div class="intro-box">
+    يُفضّل كثير من المبتعثين امتلاك سيارة خاصة، خصوصاً للعائلات أو من يسكن خارج مراكز المدن. الخطأ في هذا القرار قد يكلّف آلاف اليوروهات — لذلك تمهّل وافحص جيداً.
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step">
+      <div class="step-title">🔍 أين تبحث عن سيارة؟</div>
+      <table class="info-table">
+        <tr>
+          <th>المصدر</th>
+          <th>التفاصيل</th>
+        </tr>
+        <tr>
+          <td><strong>DoneDeal.ie</strong></td>
+          <td>أشهر موقع لبيع وشراء السيارات المستعملة في أيرلندا</td>
+        </tr>
+        <tr>
+          <td><strong>حراج أيرلندا (Instagram)</strong></td>
+          <td>سيارات من مبتعثين مغادرين — أسعار تنافسية في الغالب</td>
+        </tr>
+        <tr>
+          <td><strong>مجموعات المبتعثين</strong></td>
+          <td>واتساب وفيسبوك — تواصل مباشر مع البائع</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">✅ تحقق من هذه النقاط قبل الشراء <span class="badge badge-red">لا تتسرع</span></div>
+      <ul class="checklist">
+        <li>🔧 <strong>فحص السيارة:</strong> المحرك، الإطارات، أسفل السيارة (صدأ)، تسرب زيوت أو سوائل</li>
+        <li>💰 <strong>Road Tax:</strong> تأكد من قيمتها — بعض السيارات ضريبتها مرتفعة جداً وستدفعها بشكل دوري</li>
+        <li>🔬 <strong>شهادة NCT:</strong> الفحص الفني الدوري — تأكد أنها سارية وتحقق من تاريخ انتهائها</li>
+        <li>📄 <strong>تقرير تاريخ السيارة:</strong> يكشف الحوادث السابقة وعدد المالكين — متوفر من شركات متخصصة</li>
+        <li>🤝 <strong>فاوض على السعر</strong> — دائماً يوجد مجال للتفاوض</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 نقل الملكية (Logbook)</div>
+      <p>بعد الشراء يعطيك البائع <strong>Vehicle Registration Certificate (Logbook)</strong>:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>تعبئة بياناتك: الاسم، العنوان، التوقيع — اكتب عنوانك بدقة (ستصلك المراسلات الرسمية عليه)</li>
+        <li>صوّر جميع الأوراق قبل تسليمها للبائع</li>
+        <li>البائع يرسل المستند بالبريد لدائرة تسجيل المركبات — تابع معه حتى يتأكد الإرسال</li>
+        <li>بعد عدة أسابيع تصلك وثيقة الملكية الجديدة باسمك</li>
+      </ul>
+    </div>
+
+    <div class="step urgent">
+      <div class="step-title">🛡️ التأمين — إلزامي قبل القيادة <span class="badge badge-red">لا تقُد بدونه</span></div>
+      <p>تكلفة التأمين تختلف كثيراً حسب: العمر، سنوات الخبرة، نوع الرخصة، نوع السيارة.</p>
+      <table class="info-table" style="margin-top:10px;">
+        <tr>
+          <th>الحالة</th>
+          <th>التكلفة التقريبية سنوياً</th>
+        </tr>
+        <tr>
+          <td>رخصة أيرلندية + خبرة جيدة</td>
+          <td>من 1000 يورو</td>
+        </tr>
+        <tr>
+          <td>رخصة سعودية فقط أو خبرة محدودة</td>
+          <td>قد تصل إلى 3000 يورو أو أكثر</td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <strong>💡 لهذا ابدأ باستخراج الرخصة الأيرلندية مبكراً</strong>
+        الرخصة الأيرلندية تساعد على خفض تكلفة التأمين بشكل كبير مستقبلاً. قارن الأسعار عبر: <strong>123.ie</strong>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📅 التزامات دورية بعد الشراء</div>
+      <ul class="checklist">
+        <li>تجديد <strong>Road Tax</strong> دورياً — إلكترونياً عبر: <strong>motortax.ie</strong></li>
+        <li>تجديد <strong>NCT</strong> عند اقتراب انتهائه — عدم الاجتياز يؤثر على إجراءات أخرى</li>
+        <li>تجديد <strong>التأمين</strong> قبل انتهائه</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="warning-box">
+    <strong>⚠️ نصائح مهمة — لا تتجاهلها</strong>
+    لا تشترِ أول سيارة تراها • قارن بين عدة سيارات • احسب تكلفة التأمين وRoad Tax قبل إتمام الصفقة • تجنب السيارات ذات الصدأ الكبير • احتفظ دائماً بنسخ من جميع المستندات
+  </div>
+</div>
+
+<!-- SECTION 11: ELECTRICITY & GAS -->
+<div id="section-11" class="section">
+  <div class="section-header">
+    <div class="section-num">١١</div>
+    <div class="section-icon">⚡</div>
+    <div class="section-title">الكهرباء والغاز بعد استئجار السكن</div>
+  </div>
+
+  <div class="intro-box">
+    غالباً مسؤولية الكهرباء والغاز تكون على المستأجر ما لم ينص عقد الإيجار على غير ذلك. نظّمها من البداية لتتجنب الفواتير غير المتوقعة.
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step urgent">
+      <div class="step-title">❓ أول شيء تسأله عند استلام السكن <span class="badge badge-red">مهم</span></div>
+      <ul class="checklist">
+        <li>هل الكهرباء مشمولة في الإيجار؟</li>
+        <li>هل الغاز مشمول في الإيجار؟</li>
+        <li>ما هي الشركة المزودة الحالية؟</li>
+        <li>هل يوجد حساب قائم أم يجب فتح حساب جديد؟</li>
+        <li>هل السكن يعمل بالغاز أم بالكهرباء فقط؟ (بعض الشقق الحديثة كهرباء فقط)</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📸 صوّر العدادات فور الاستلام</div>
+      <p>هذه الخطوة تحميك من دفع استهلاك المستأجر السابق:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>صوّر عداد الكهرباء وسجّل القراءة</li>
+        <li>صوّر عداد الغاز وسجّل القراءة</li>
+        <li>احتفظ بالصور للرجوع إليها عند الحاجة</li>
+      </ul>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">💰 قارن الأسعار قبل الاشتراك <span class="badge badge-orange">لا تشترك في أول عرض</span></div>
+      <p>استخدم مواقع المقارنة للحصول على أفضل سعر:</p>
+      <div class="docs-grid" style="margin-top:10px;">
+        <div class="doc-item">🔍 <strong>bonkers.ie</strong> — مقارنة الكهرباء والغاز</div>
+        <div class="doc-item">🔍 <strong>switcher.ie</strong> — مقارنة مزودي الطاقة</div>
+      </div>
+      <p style="margin-top:10px; font-size:14px; color:#444;">قارن: سعر الكهرباء والغاز، الرسوم الثابتة، عروض العملاء الجدد، خصومات الدفع الإلكتروني.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">💳 طرق الدفع الشائعة</div>
+      <table class="info-table">
+        <tr>
+          <th>طريقة الدفع</th>
+          <th>التفاصيل</th>
+        </tr>
+        <tr>
+          <td><strong>Direct Debit</strong></td>
+          <td>الأكثر شيوعاً — خصم تلقائي من حسابك البنكي، غالباً يوفر خصماً</td>
+        </tr>
+        <tr>
+          <td><strong>فاتورة دورية</strong></td>
+          <td>تصل كل شهر أو شهرين ثم تسدد</td>
+        </tr>
+        <tr>
+          <td><strong>عداد مسبق الدفع</strong></td>
+          <td>تشحن الرصيد حسب احتياجك — موجود في بعض المساكن</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🚚 عند الانتقال إلى سكن جديد</div>
+      <ul class="checklist">
+        <li>أخبر الشركة بتاريخ مغادرتك وأعطهم القراءة النهائية للعداد</li>
+        <li>أغلق الحساب أو انقل الخدمة للعنوان الجديد</li>
+        <li>عدم إغلاق الحساب يعني استمرار صدور الفواتير باسمك!</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصائح مهمة</strong>
+    راقب الاستهلاك في الشتاء — فواتير التدفئة ترتفع بشكل ملحوظ.<br>
+    احتفظ بنسخ الفواتير — تُستخدم كـ <strong>Proof of Address</strong> في كثير من المعاملات.<br>
+    فعّل الـ Direct Debit إذا كان يوفر خصماً على فاتورتك.
+  </div>
+</div>
+
+<!-- SECTION 12: MATERNITY -->
+<div id="section-12" class="section">
+  <div class="section-header">
+    <div class="section-num">١٢</div>
+    <div class="section-icon">🤱</div>
+    <div class="section-title">الحمل والولادة واستخراج أوراق المولود</div>
+  </div>
+
+  <div class="intro-box">
+    دليل شامل من اكتشاف الحمل حتى حصول المولود على أوراقه الرسمية في أيرلندا والسفارة السعودية.
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step urgent">
+      <div class="step-title">١ — بعد اكتشاف الحمل: راجع الطبيب العام (GP) <span class="badge badge-red">أول خطوة</span></div>
+      <p>احجز موعداً مع GP لتأكيد الحمل — سيحولك بعدها إلى مستشفى الولادة الأقرب لسكنك.</p>
+      <div class="city-section" style="margin-top:12px;">
+        <div class="city-name" style="font-size:15px;">🏥 أمثلة على مستشفيات الولادة في دبلن</div>
+        <p>Rotunda Hospital • National Maternity Hospital • The Coombe Hospital</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">٢ — المتابعة الدورية في المستشفى</div>
+      <ul class="checklist">
+        <li>بعد التسجيل يُحدد جدول مراجعات الحمل</li>
+        <li>المواعيد متباعدة في البداية وتزداد تدريجياً مع تقدم الحمل</li>
+        <li>خلال الأسابيع الأخيرة تصبح المراجعات أسبوعية غالباً</li>
+        <li>اطلب مترجماً عربياً فور حجز أي موعد إذا احتجت</li>
+      </ul>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">٣ — الضمان المالي من الملحقية الثقافية <span class="badge badge-orange">مهم</span></div>
+      <ul class="checklist">
+        <li>اطلب خطة الولادة والتكاليف التقديرية من المستشفى مبكراً</li>
+        <li>أرسل خطة الولادة إلى الملحقية الثقافية لطلب ضمان مالي (Financial Guarantee)</li>
+        <li>يمكن للمستشفى التواصل مباشرة مع الملحقية — زوّدهم بالبريد الإلكتروني المختص</li>
+        <li>لا تنتظر حتى آخر لحظة — ابدأ هذا الإجراء مبكراً</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">٤ — تسجيل المولود وشهادة الميلاد <span class="badge badge-red">خلال 3 أشهر</span></div>
+      <ul class="checklist">
+        <li>بعد الولادة يرسل المستشفى البيانات لدائرة التسجيل — ستحصل على <strong>Birth Notification ID</strong></li>
+        <li>أنشئ حساب <strong>MyGovID موثق (Verified)</strong> — ضروري للتسجيل الإلكتروني</li>
+        <li>سجّل المولود إلكترونياً عبر خدمة التسجيل المدني على <strong>gov.ie</strong></li>
+        <li>تأكد من اسم الطفل جيداً قبل الاعتماد — تعديله لاحقاً معقد</li>
+        <li>بعد اكتمال التسجيل اطلب شهادة الميلاد الرسمية — ترسل بالبريد</li>
+      </ul>
+      <table class="info-table" style="margin-top:12px;">
+        <tr>
+          <td>تسجيل الميلاد</td>
+          <td><strong>مجاني</strong></td>
+        </tr>
+        <tr>
+          <td>شهادة الميلاد الأصلية</td>
+          <td><strong>20 يورو</strong></td>
+        </tr>
+      </table>
+      <div class="tip-box" style="margin-top:12px;">
+        <strong>💡 رقم PPS تلقائي</strong>
+        بمجرد تسجيل الولادة رسمياً يُصدر رقم PPS للمولود تلقائياً في أغلب الحالات.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">٥ — إجراءات السفارة السعودية</div>
+      <ul class="checklist">
+        <li>صدّق شهادة الميلاد من <strong>وزارة الخارجية الأيرلندية</strong> أولاً</li>
+        <li>ثم صدّقها من <strong>السفارة السعودية</strong> في أيرلندا</li>
+        <li>أصدر جواز السفر السعودي للمولود</li>
+        <li>سجّل المولود في <strong>منصة أبشر</strong></li>
+        <li>أضف المولود لدى الملحقية الثقافية</li>
+      </ul>
+      <div class="warning-box" style="margin-top:12px;">
+        <strong>⚠️ تنبيه</strong>
+        إجراءات السفارة تتغير من وقت لآخر — تواصل مع السفارة مباشرة للتأكد من أحدث المتطلبات.
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-title">٦ — إضافة المولود للملحقية الثقافية</div>
+      <ul class="checklist">
+        <li>تواصل مع الملحقية الثقافية وقدّم شهادة الميلاد والمستندات المطلوبة</li>
+        <li>اطلب إضافة المولود إلى ملف البعثة</li>
+        <li>استكمل أي متطلبات إضافية تطلبها الملحقية أو جهة الابتعاث</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">٧ — الإجراءات الصحية للمولود</div>
+      <ul class="checklist">
+        <li>سجّل الطفل لدى طبيب الأسرة (GP) في أقرب وقت</li>
+        <li>التزم بجدول التطعيمات الدورية منذ الأيام الأولى</li>
+        <li>استفسر عن البطاقة الصحية للأطفال — قد تغطي خدمات طبية حتى عمر 5 سنوات</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>✅ قائمة التحقق السريعة</strong>
+    موعد GP بعد تأكيد الحمل • اختيار مستشفى الولادة • طلب الضمان المالي من الملحقية مبكراً • طلب مترجم عربي عند الحاجة • الاحتفاظ بمستندات المستشفى • تسجيل المولود خلال 3 أشهر • تصديق شهادة الميلاد (خارجية أيرلندا ← السفارة السعودية) • إضافة المولود لملف البعثة • تسجيل الطفل عند GP • الالتزام بجدول التطعيمات
+  </div>
+
+  <div class="warning-box" style="margin-top:20px;">
+    <strong>⚠️ تنبيه مهم</strong>
+    الإجراءات الحكومية والسفارية تتغير باستمرار. تأكد دائماً من أحدث المتطلبات من المستشفى والسفارة السعودية والملحقية الثقافية. لا تعتمد على تجارب الآخرين وحدها دون التحقق.
+  </div>
+</div>
+
+<!-- SECTION 13: SCHENGEN -->
+<div id="section-13" class="section">
+  <div class="section-header">
+    <div class="section-num">١٣</div>
+    <div class="section-icon">🌍</div>
+    <div class="section-title">تأشيرة شنغن للمبتعث في أيرلندا</div>
+  </div>
+
+  <div class="intro-box">
+    أيرلندا ليست ضمن منطقة شنغن — لذلك تحتاج تأشيرة منفصلة لزيارة دول الاتحاد الأوروبي. التأشيرة الواحدة تتيح لك زيارة أغلب الدول الأوروبية.
+  </div>
+
+  <div class="steps-container">
+
+    <div class="step urgent">
+      <div class="step-title">💡 نصيحة مهمة — استخرج أول شنغن من السعودية <span class="badge badge-red">قبل السفر</span></div>
+      <p>يُفضّل استخراج أول تأشيرة شنغن من السعودية قبل السفر لأيرلندا إن أمكن — الإجراءات غالباً أسهل وأسرع.<br>
+      بعض السفارات الأوروبية في أيرلندا قد تطلب:</p>
+      <ul class="checklist" style="margin-top:10px;">
+        <li>إقامة أيرلندية سارية (IRP)</li>
+        <li>كشف حساب بنكي أيرلندي</li>
+        <li>إثبات سكن في أيرلندا</li>
+        <li>مواعيد قد تكون بعيدة جداً</li>
+      </ul>
+      <p style="margin-top:10px; font-size:14px; color:#444;">بعد الاستقرار في أيرلندا يمكن التقديم من دبلن حسب الدولة المقصودة.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">✈️ لماذا تحتاج تأشيرة شنغن؟</div>
+      <ul class="checklist">
+        <li>حضور المؤتمرات العلمية والدورات التدريبية في أوروبا</li>
+        <li>السفر السياحي خلال الإجازات</li>
+        <li>زيارة الدول الأوروبية القريبة بتكاليف منخفضة</li>
+        <li>تأشيرة واحدة تغطي أغلب دول الاتحاد الأوروبي</li>
+      </ul>
+    </div>
+
+    <div class="step">
+      <div class="step-title">📋 الوثائق المطلوبة عادةً</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز سفر ساري المفعول</div>
+        <div class="doc-item">🪪 بطاقة IRP سارية</div>
+        <div class="doc-item">📋 إثبات التسجيل الجامعي</div>
+        <div class="doc-item">💰 كشف حساب بنكي حديث</div>
+        <div class="doc-item">✈️ حجز طيران وفندق</div>
+        <div class="doc-item">🏥 تأمين سفر</div>
+      </div>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">🎓 سفر لمؤتمر علمي؟ <span class="badge badge-orange">إضافي</span></div>
+      <p>احصل على <strong>خطاب رسمي من جامعتك</strong> يوضح الغرض من السفر — يقوي طلبك بشكل كبير.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🏛️ كيف تتقدم؟</div>
+      <ul class="checklist">
+        <li>تقدم لسفارة الدولة التي ستزورها أولاً أو تقضي فيها أطول مدة</li>
+        <li>كل سفارة لها موقعها ومتطلباتها — تحقق منها مسبقاً</li>
+        <li>احجز موعدك مبكراً — بعض السفارات تأخذ وقتاً طويلاً</li>
+        <li>يمكن حجز طيران وفندق قابل للإلغاء في البداية</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصيحة</strong>
+    احتفظ دائماً بإثبات التسجيل الجامعي وكشف حساب بنكي محدّث — هما أهم وثيقتين في طلب الشنغن.
+  </div>
+
+    <div class="step">
+      <div class="step-title">📋 الوثائق المطلوبة عادةً</div>
+      <div class="docs-grid">
+        <div class="doc-item">🛂 جواز سفر ساري المفعول</div>
+        <div class="doc-item">🪪 بطاقة IRP سارية</div>
+        <div class="doc-item">📋 إثبات التسجيل الجامعي</div>
+        <div class="doc-item">💰 كشف حساب بنكي حديث</div>
+        <div class="doc-item">✈️ حجز طيران وفندق</div>
+        <div class="doc-item">🏥 تأمين سفر</div>
+      </div>
+    </div>
+
+    <div class="step important">
+      <div class="step-title">🎓 سفر لمؤتمر علمي؟ <span class="badge badge-orange">إضافي</span></div>
+      <p>إذا كانت الرحلة لمؤتمر أو دورة علمية احصل على <strong>خطاب رسمي من جامعتك</strong> يوضح الغرض من السفر — يقوي طلبك بشكل كبير.</p>
+    </div>
+
+    <div class="step">
+      <div class="step-title">🏛️ كيف تتقدم؟</div>
+      <ul class="checklist">
+        <li>تقدم لسفارة الدولة التي ستزورها أولاً أو تقضي فيها أطول مدة</li>
+        <li>كل سفارة لها موقعها الرسمي ومتطلباتها — تحقق منها مسبقاً</li>
+        <li>احجز موعدك مبكراً — بعض السفارات تأخذ وقتاً</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="tip-box">
+    <strong>💡 نصائح مهمة</strong>
+    احتفظ دائماً بإثبات التسجيل الجامعي وكشف حساب بنكي محدّث — هما أهم وثيقتين في طلب الشنغن.<br>
+    بعض السفارات تطلب حجز الطيران والفندق قبل منح التأشيرة — يمكن حجز قابل للإلغاء في البداية.
+  </div>
+</div>
+
+<!-- SECTION 14: APPS -->
+<div id="section-14" class="section">
+  <div class="section-header">
+    <div class="section-num">١٤</div>
+    <div class="section-icon">📱</div>
+    <div class="section-title">أهم التطبيقات التي تحتاجها فور الوصول</div>
+  </div>
+
+  <div class="intro-box">
+    حمّل هذه التطبيقات فور وصولك إلى أيرلندا — ستوفر عليك ساعات طويلة في الأسبوع الأول.
+  </div>
+
+  <style>
+    .apps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+    .app-card { background: #f8f9fa; border-radius: 12px; padding: 14px; text-align: center; border: 1px solid #e0e0e0; }
+    .app-emoji { font-size: 28px; margin-bottom: 6px; }
+    .app-name { font-size: 13px; font-weight: 700; color: #1a1a2e; }
+    .app-desc { font-size: 11px; color: #666; margin-top: 4px; }
+    .apps-category { font-size: 17px; font-weight: 700; color: #006633; margin: 20px 0 10px; border-right: 4px solid #006633; padding-right: 10px; }
+  </style>
+
+  <div class="apps-category">🗺️ الوصول والتنقل</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🗺️</div><div class="app-name">Google Maps</div><div class="app-desc">الملاحة والمواصلات</div></div>
+    <div class="app-card"><div class="app-emoji">🚌</div><div class="app-name">TFI Live</div><div class="app-desc">مواعيد الحافلات مباشرة</div></div>
+    <div class="app-card"><div class="app-emoji">💳</div><div class="app-name">Leap Top-Up</div><div class="app-desc">شحن بطاقة Leap</div></div>
+    <div class="app-card"><div class="app-emoji">🚖</div><div class="app-name">Free Now</div><div class="app-desc">تاكسي — الأشهر في أيرلندا</div></div>
+    <div class="app-card"><div class="app-emoji">🚗</div><div class="app-name">Uber</div><div class="app-desc">متوفر في بعض المناطق</div></div>
+  </div>
+
+  <div class="apps-category">🛒 التسوق والمواد الغذائية</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🏪</div><div class="app-name">Tesco</div><div class="app-desc">أكبر سلسلة سوبرماركت</div></div>
+    <div class="app-card"><div class="app-emoji">🛍️</div><div class="app-name">Dunnes Stores</div><div class="app-desc">تسوق وعروض</div></div>
+    <div class="app-card"><div class="app-emoji">💰</div><div class="app-name">Lidl Plus</div><div class="app-desc">عروض وخصومات Lidl</div></div>
+    <div class="app-card"><div class="app-emoji">🥦</div><div class="app-name">Aldi</div><div class="app-desc">أسعار منخفضة</div></div>
+    <div class="app-card"><div class="app-emoji">🍔</div><div class="app-name">Just Eat</div><div class="app-desc">توصيل الطعام</div></div>
+  </div>
+
+  <div class="apps-category">🏛️ الخدمات الحكومية</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🪪</div><div class="app-name">MyGovID</div><div class="app-desc">هويتك الرقمية الأيرلندية</div></div>
+    <div class="app-card"><div class="app-emoji">🏢</div><div class="app-name">MyWelfare</div><div class="app-desc">الخدمات الاجتماعية</div></div>
+  </div>
+
+  <div class="apps-category">🏥 الصحة</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🏥</div><div class="app-name">HSE</div><div class="app-desc">الخدمات الصحية الأيرلندية</div></div>
+    <div class="app-card"><div class="app-emoji">👨‍⚕️</div><div class="app-name">Patient App</div><div class="app-desc">مواعيد وسجلاتك الطبية</div></div>
+  </div>
+
+  <div class="apps-category">🎓 الدراسة</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">💻</div><div class="app-name">Microsoft Teams</div><div class="app-desc">المحاضرات والتواصل</div></div>
+    <div class="app-card"><div class="app-emoji">📧</div><div class="app-name">Outlook</div><div class="app-desc">البريد الجامعي</div></div>
+    <div class="app-card"><div class="app-emoji">📚</div><div class="app-name">Moodle / Brightspace</div><div class="app-desc">منصة جامعتك التعليمية</div></div>
+    <div class="app-card"><div class="app-emoji">📝</div><div class="app-name">Zotero</div><div class="app-desc">إدارة المراجع البحثية</div></div>
+  </div>
+
+  <div class="apps-category">🏠 السكن</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🏠</div><div class="app-name">Daft.ie</div><div class="app-desc">أشهر موقع إيجار</div></div>
+    <div class="app-card"><div class="app-emoji">🏡</div><div class="app-name">Rent.ie</div><div class="app-desc">خيارات إيجار إضافية</div></div>
+  </div>
+
+  <div class="apps-category">✈️ الطيران والسفر</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">✈️</div><div class="app-name">Ryanair</div><div class="app-desc">رحلات رخيصة داخل أوروبا</div></div>
+    <div class="app-card"><div class="app-emoji">🛫</div><div class="app-name">Aer Lingus</div><div class="app-desc">الخطوط الأيرلندية</div></div>
+    <div class="app-card"><div class="app-emoji">🔍</div><div class="app-name">Skyscanner</div><div class="app-desc">مقارنة أسعار الطيران</div></div>
+    <div class="app-card"><div class="app-emoji">🏨</div><div class="app-name">Booking.com</div><div class="app-desc">حجز الفنادق</div></div>
+  </div>
+
+  <div class="apps-category">💰 البنوك والتحويلات</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">💜</div><div class="app-name">Revolut</div><div class="app-desc">افتح حساباً في دقائق</div></div>
+    <div class="app-card"><div class="app-emoji">🏦</div><div class="app-name">Bank of Ireland</div><div class="app-desc">أشهر بنك للطلاب</div></div>
+    <div class="app-card"><div class="app-emoji">🏛️</div><div class="app-name">AIB</div><div class="app-desc">بنك أيرلندي موثوق</div></div>
+    <div class="app-card"><div class="app-emoji">💸</div><div class="app-name">Wise</div><div class="app-desc">تحويل للسعودية بأقل رسوم</div></div>
+  </div>
+
+  <div class="apps-category">🇸🇦 للمبتعث السعودي</div>
+  <div class="apps-grid">
+    <div class="app-card"><div class="app-emoji">🎓</div><div class="app-name">سفير 2</div><div class="app-desc">منصة الابتعاث السعودية</div></div>
+    <div class="app-card"><div class="app-emoji">✅</div><div class="app-name">توكلنا</div><div class="app-desc">الخدمات الحكومية السعودية</div></div>
+    <div class="app-card"><div class="app-emoji">📋</div><div class="app-name">أبشر</div><div class="app-desc">الخدمات الحكومية السعودية</div></div>
+  </div>
+
+</div>
+
+<!-- SECTION 15: WEBSITES -->
+<div id="section-15" class="section">
+  <div class="section-header">
+    <div class="section-num">١٥</div>
+    <div class="section-icon">🌐</div>
+    <div class="section-title">أهم المواقع الإلكترونية في أيرلندا</div>
+  </div>
+
+  <div class="intro-box">
+    هذه المواقع ستوفر عليك ساعات طويلة من البحث — احفظها في متصفحك من اليوم الأول.
+  </div>
+
+  <div class="steps-container">
+    <div class="step">
+      <div class="step-title">📋 المواقع الأساسية</div>
+      <table class="info-table">
+        <tr><th>الموقع</th><th>ما يقدمه</th></tr>
+        <tr><td><strong>citizensinformation.ie</strong></td><td>معلومات شاملة عن الحقوق والخدمات في أيرلندا — ابدأ من هنا</td></tr>
+        <tr><td><strong>gov.ie</strong></td><td>البوابة الحكومية الرسمية — جميع الخدمات الحكومية</td></tr>
+        <tr><td><strong>mygov.ie</strong></td><td>هويتك الرقمية وإدارة خدماتك الحكومية</td></tr>
+        <tr><td><strong>hse.ie</strong></td><td>الخدمات الصحية — أطباء، مستشفيات، تطعيمات</td></tr>
+        <tr><td><strong>revenue.ie</strong></td><td>الضرائب والإعفاءات الضريبية</td></tr>
+        <tr><td><strong>rtb.ie</strong></td><td>هيئة الإيجار — حقوقك كمستأجر</td></tr>
+        <tr><td><strong>ndls.ie</strong></td><td>رخصة القيادة — حجز المواعيد</td></tr>
+        <tr><td><strong>rsa.ie</strong></td><td>اختبار القيادة العملي</td></tr>
+        <tr><td><strong>motortax.ie</strong></td><td>تجديد ضريبة الطريق للسيارة</td></tr>
+        <tr><td><strong>inisonline.jahs.ie</strong></td><td>حجز موعد IRP — تسجيل الإقامة</td></tr>
+        <tr><td><strong>ncs.gov.ie</strong></td><td>دعم تكاليف الحضانة للأسر</td></tr>
+        <tr><td><strong>bonkers.ie</strong></td><td>مقارنة أسعار الكهرباء والغاز والإنترنت</td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer-page">
+  <h2>🤝 أرقام مهمة وروابط مفيدة</h2>
+
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="icon">🆘</div>
+      <div class="label">رقم الطوارئ</div>
+      <div class="value">999 أو 112</div>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🪪</div>
+      <div class="label">حجز موعد IRP</div>
+      <div class="value">inisonline.jahs.ie</div>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🏠</div>
+      <div class="label">البحث عن سكن</div>
+      <div class="value">daft.ie</div>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🏥</div>
+      <div class="label">الخدمات الصحية</div>
+      <div class="value">hse.ie</div>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🚗</div>
+      <div class="label">رخصة القيادة</div>
+      <div class="value">ndls.ie</div>
+    </div>
+    <div class="contact-card">
+      <div class="icon">🌐</div>
+      <div class="label">معلومات الهجرة</div>
+      <div class="value">irishimmigration.ie</div>
+    </div>
+  </div>
+
+  <p style="margin-top:30px; opacity:0.8; font-size:14px;">
+    نتمنى لك رحلة دراسية موفقة ومليئة بالنجاح 🌟<br>
+    أيرلندا بلد جميل ترحب بك!
+  </p>
+</div>
+
+</body>
+</html>
